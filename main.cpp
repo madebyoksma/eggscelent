@@ -30,7 +30,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) 
 
             char command[1024];
             snprintf(command, sizeof(command),
-                "natives\\java\\bin\\java -Xms128M -Xmx512M -Djava.library.path=natives -cp \"client.jar;lwjgl.jar;lwjgl_util.jar;jinput.jar\" net.minecraft.client.Minecraft %s 0 --gameDir game --assetsDir assets",
+                "natives\\java\\bin\\java -Xms128M -Xmx512M -Djava.library.path=natives -cp \"client.jar;lwjgl.jar;lwjgl_util.jar;jinput.jar\" net.minecraft.client.Minecraft %s 0",
                 buffer);
 
             STARTUPINFO si = { sizeof(si) };
